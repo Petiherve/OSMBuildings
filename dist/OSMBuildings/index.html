@@ -104,7 +104,7 @@
   // on pointer up
   osmb.on('pointerup', e => {
     // check for event targets aka clicked buildings
-    const features = e.target;
+    const features = e.features;
 
     // if none, remove any previous selection and return
     if (!features) {
